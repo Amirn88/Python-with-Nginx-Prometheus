@@ -9,4 +9,4 @@ spec:
     - protocol: TCP  
       port: {{ .Values.deployment1.servicePort }}  
       targetPort: {{ .Values.deployment1.containerPort }}  
-  type: ClusterIP  
+  type:  NodePort 

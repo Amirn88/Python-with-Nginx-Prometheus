@@ -1,13 +1,13 @@
 # Deployment 1  
 deployment1:  
-  image: amirn88/nginx-metrics-app:v1
+  image: amirn88/python-metrics-app:v1
   replicaCount: 1  
-  containerPort: 80  
-  servicePort: 80  
+  containerPort: 5000
+  servicePort: 5000 
 
 # Deployment 2  
 deployment2:
-  image: amirn88/python-metrics-app:v1  
+  image: amirn88/nginx-metrics-app:v1  
   replicaCount: 1  
-  containerPort: 5000
-  servicePort: 5000
+  containerPort: 80
+  servicePort: 80
