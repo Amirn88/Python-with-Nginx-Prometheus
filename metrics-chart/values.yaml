@@ -1,0 +1,16 @@
+# Deployment Configuration  
+deployment:  
+  name: metrics-app  
+  replicaCount: 1  
+  image:  
+    repository: amirn88/python-metrics-app  
+    tag: v1  
+    pullPolicy: IfNotPresent  
+  containerPort: 5000  
+
+# Service Configuration  
+service:  
+  name: metrics-service  
+  port: 5000  
+  targetPort: 5000  
+  type: ClusterIP  
